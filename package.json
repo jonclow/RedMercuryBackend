@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,30 @@
   "bugs": {
     "url": "https://github.com/jonclow/RedMercuryBackend/issues"
   },
-  "homepage": "https://github.com/jonclow/RedMercuryBackend#readme"
+  "homepage": "https://github.com/jonclow/RedMercuryBackend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.11",
+    "pg": "^7.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 1337
+    }
+  }
 }
