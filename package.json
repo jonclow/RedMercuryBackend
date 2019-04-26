@@ -1,7 +1,7 @@
 {
   "name": "rmbackend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic API",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,7 +40,7 @@
     "delay": "2500",
     "env": {
       "NODE_ENV": "development",
-      "PORT": 1337
+      "PORT": 3000
     }
   }
 }

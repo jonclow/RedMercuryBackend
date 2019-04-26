@@ -8,7 +8,7 @@ const db = require('./config/datastore');
 const weatherRoutes = require('./api/routes/weatherRouter')();
 
 const app = express();
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 3000;
 
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
